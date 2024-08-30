@@ -1,0 +1,178 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fcf9f9;
+}
+
+header {
+    background-color: #3b3d3f;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-hamburguer {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+main {
+    padding: 2rem;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.hero-text {
+    flex: 1;
+    margin-right: 2rem;
+}
+
+.hero-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text button {
+    background-color: #2196F3;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+}
+
+.noticias, .jogos {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+
+.noticias-container, .jogos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.noticia, .jogo {
+    flex: 1 0 30%;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.noticia img, .jogo img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.noticia h3, .jogo h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.noticia p, .jogo p {
+    font-size: 1rem;
+}
+
+.jogo .time {
+    display: flex;
+    align-items: center;
+}
+
+.jogo .time img {
+    width: 30px;
+    height: 30px;
+    margin-right: 1rem;
+}
+
+.jogo .placar {
+    font-size: 1.5rem;
+    margin: 0 1rem;
+}
+
+footer {
+    background-color: #2196F3;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .menu-hamburguer {
+        display: block;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-text {
+        margin-bottom: 1rem;
+    }
+
+    .noticias-container, .jogos-container {
+        flex-direction: column;
+    }
+
+    .noticia, .jogo {
+        flex: 1 0 100%;
+    }
+}
